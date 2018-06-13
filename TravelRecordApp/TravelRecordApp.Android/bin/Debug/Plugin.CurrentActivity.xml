@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Plugin.CurrentActivity</name>
+    </assembly>
+    <members>
+        <member name="T:Plugin.CurrentActivity.CrossCurrentActivity">
+            <summary>
+            Cross platform CurrentActivity implemenations
+            </summary>
+        </member>
+        <member name="P:Plugin.CurrentActivity.CrossCurrentActivity.Current">
+            <summary>
+            Current settings to use
+            </summary>
+        </member>
+        <member name="T:Plugin.CurrentActivity.CurrentActivityImplementation">
+            <summary>
+            Implementation for Feature
+            </summary>
+        </member>
+        <member name="P:Plugin.CurrentActivity.CurrentActivityImplementation.Activity">
+            <summary>
+            Gets or sets the activity.
+            </summary>
+            <value>The activity.</value>
+        </member>
+        <member name="E:Plugin.CurrentActivity.CurrentActivityImplementation.ActivityStateChanged">
+            <summary>
+            Activity state changed event handler
+            </summary>
+        </member>
+        <member name="P:Plugin.CurrentActivity.CurrentActivityImplementation.AppContext">
+            <summary>
+            Gets the current application context
+            </summary>
+        </member>
+        <member name="M:Plugin.CurrentActivity.CurrentActivityImplementation.Init(Android.App.Application)">
+            <summary>
+            Initialize current activity with application
+            </summary>
+            <param name="application">The main application</param>
+        </member>
+        <member name="M:Plugin.CurrentActivity.CurrentActivityImplementation.Init(Android.App.Activity,Android.OS.Bundle)">
+            <summary>
+            Initialize current activity with activity!
+            </summary>
+            <param name="activity">The main activity</param>
+            <param name="bundle">Bundle for activity </param>
+        </member>
+        <member name="T:Plugin.CurrentActivity.ICurrentActivity">
+            <summary>
+            Current Activity Interface
+            </summary>
+        </member>
+        <member name="P:Plugin.CurrentActivity.ICurrentActivity.Activity">
+            <summary>
+            Gets or sets the activity.
+            </summary>
+            <value>The activity.</value>
+        </member>
+        <member name="P:Plugin.CurrentActivity.ICurrentActivity.AppContext">
+            <summary>
+            Gets the current Application Context.
+            </summary>
+            <value>The app context.</value>
+        </member>
+        <member name="E:Plugin.CurrentActivity.ICurrentActivity.ActivityStateChanged">
+            <summary>
+            Fires when activity state events are fired
+            </summary>
+        </member>
+        <member name="M:Plugin.CurrentActivity.ICurrentActivity.Init(Android.App.Application)">
+            <summary>
+            Initialize Current Activity Plugin with Application
+            </summary>
+            <param name="application"></param>
+        </member>
+        <member name="M:Plugin.CurrentActivity.ICurrentActivity.Init(Android.App.Activity,Android.OS.Bundle)">
+            <summary>
+            Initialize the current activity with activity and bundle
+            </summary>
+            <param name="activity"></param>
+            <param name="bundle"></param>
+        </member>
+    </members>
+</doc>
