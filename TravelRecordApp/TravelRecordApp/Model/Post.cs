@@ -6,6 +6,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.WindowsAzure.MobileServices;
 
 namespace TravelRecordApp.Model
 {
@@ -184,14 +185,16 @@ namespace TravelRecordApp.Model
 
         public static async void Insert(Post post)
         {
-            await App.MobileService.GetTable<Post>().InsertAsync(post);
+            await App.postsTable.InsertAsync(post);
+            await App.MobileService.SyncContext.PushAsync();
         }
 
         public static async Task<bool> Delete(Post post)
         {
             try
             {
-                await App.MobileService.GetTable<Post>().DeleteAsync(post);
+                await App.postsTable.DeleteAsync(post);
+                await App.MobileService.SyncContext.PushAsync();
                 return true;
             }
             catch(Exception)
@@ -202,7 +205,7 @@ namespace TravelRecordApp.Model
 
         public static async Task<List<Post>> Read()
         {
-            var posts = await App.MobileService.GetTable<Post>().Where(p => p.UserId == App.user.Id).ToListAsync();
+            var posts = await App.postsTable.Where(p => p.UserId == App.user.Id).ToListAsync();
 
             return posts;
         }

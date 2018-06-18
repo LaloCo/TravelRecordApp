@@ -190,6 +190,8 @@ C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Andr
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\System.Xml.pdb
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\Xamarin.Forms.Core.pdb
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\Xamarin.Forms.Xaml.pdb
+C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\bin\Debug\Microsoft.Azure.Mobile.Client.SQLiteStore.dll
+C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\bin\Debug\Microsoft.Azure.Mobile.Client.SQLiteStore.xml
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\bin\Debug\TravelRecordApp.Android.dll
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp\bin\Debug\TravelRecordApp.dll
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\bin\Debug\TravelRecordApp.dll.mdb

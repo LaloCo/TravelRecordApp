@@ -2,6 +2,7 @@ C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Andr
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\FormsViewGroup.dll
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\Java.Interop.dll
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\Microsoft.Azure.Mobile.Client.dll
+C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\Microsoft.Azure.Mobile.Client.SQLiteStore.dll
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\Microsoft.CSharp.dll
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\Mono.Android.dll
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\mscorlib.dll
@@ -75,6 +76,10 @@ C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Andr
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\System.Reflection.Extensions.dll
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\System.Runtime.Serialization.dll
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\System.ServiceModel.Internals.dll
+C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\System.Resources.ResourceManager.dll
+C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\System.Threading.Tasks.dll
+C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\System.Diagnostics.Tools.dll
+C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\System.Globalization.dll
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\netstandard.dll
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\System.Data.dll
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\System.Numerics.dll
@@ -88,11 +93,7 @@ C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Andr
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\System.Security.SecureString.dll
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\System.Web.Services.dll
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\System.Xml.XPath.XDocument.dll
-C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\System.Threading.Tasks.dll
-C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\System.Globalization.dll
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\Mono.Security.dll
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\System.Net.Primitives.dll
-C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\System.Resources.ResourceManager.dll
-C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\System.Diagnostics.Tools.dll
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\System.ComponentModel.dll
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp.Android\obj\Debug\android\assets\System.Xml.ReaderWriter.dll

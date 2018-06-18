@@ -22,42 +22,49 @@ namespace TravelRecordApp
 			InitializeComponent ();
 		}
 
+        PermissionStatus status;
+        bool hasRequesterPermission = false;
         protected async override void OnAppearing()
         {
             base.OnAppearing();
 
             try
             {
-                var status = await CrossPermissions.Current.CheckPermissionStatusAsync(Plugin.Permissions.Abstractions.Permission.Location);
-                if(status != Plugin.Permissions.Abstractions.PermissionStatus.Granted)
+                var newStatus = await CrossPermissions.Current.CheckPermissionStatusAsync(Plugin.Permissions.Abstractions.Permission.Location);
+                if (newStatus != status || !hasRequesterPermission)
                 {
-                    if(await CrossPermissions.Current.ShouldShowRequestPermissionRationaleAsync(Plugin.Permissions.Abstractions.Permission.Location))
+                    status = newStatus;
+                    if (status != Plugin.Permissions.Abstractions.PermissionStatus.Granted)
                     {
-                        await DisplayAlert("Need permission", "We will have to access your location for this", "Ok");
+                        if (await CrossPermissions.Current.ShouldShowRequestPermissionRationaleAsync(Plugin.Permissions.Abstractions.Permission.Location))
+                        {
+                            await DisplayAlert("Need permission", "We will have to access your location for this", "Ok");
+                        }
+                        var results = await CrossPermissions.Current.RequestPermissionsAsync(Permission.Location);
+                        hasRequesterPermission = true;
+                        status = results[Permission.Location];
                     }
-                    var results = await CrossPermissions.Current.RequestPermissionsAsync(Permission.Location);
-                    status = results[Permission.Location];
-                }
 
-                if(status == PermissionStatus.Granted)
-                {
-                    locationsMap.IsShowingUser = true;
-                    var locator = CrossGeolocator.Current;
-                    locator.PositionChanged += Locator_PositionChanged;
-                    await locator.StartListeningAsync(TimeSpan.FromSeconds(0), 100);
+                    if (status == PermissionStatus.Granted)
+                    {
+                        locationsMap.IsShowingUser = true;
+                        var locator = CrossGeolocator.Current;
+                        locator.PositionChanged += Locator_PositionChanged;
+                        await locator.StartListeningAsync(TimeSpan.FromSeconds(0), 100);
 
-                    var position = await locator.GetPositionAsync();
+                        var position = await locator.GetPositionAsync();
 
-                    var center = new Xamarin.Forms.Maps.Position(position.Latitude, position.Longitude);
-                    var span = new Xamarin.Forms.Maps.MapSpan(center, 2, 2);
-                    locationsMap.MoveToRegion(span);
+                        var center = new Xamarin.Forms.Maps.Position(position.Latitude, position.Longitude);
+                        var span = new Xamarin.Forms.Maps.MapSpan(center, 2, 2);
+                        locationsMap.MoveToRegion(span);
 
-                    var posts = await Post.Read();
-                    DisplayInMap(posts);
-                }
-                else
-                {
+                        var posts = await Post.Read();
+                        DisplayInMap(posts);
+                    }
+                    else
+                    {
 
+                    }
                 }
             }
             catch(Exception ex)

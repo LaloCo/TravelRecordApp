@@ -50,3 +50,4 @@ Xamarin.GooglePlayServices.Tasks
 Xamarin.GooglePlayServices.Maps
 Xamarin.GooglePlayServices.Base
 System.ComponentModel
+Microsoft.Azure.Mobile.Client.SQLiteStore

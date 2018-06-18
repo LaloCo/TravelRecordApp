@@ -8,6 +8,7 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using TravelRecordApp.Model;
 using TravelRecordApp.ViewModel;
+using TravelRecordApp.Helpers;
 
 namespace TravelRecordApp
 {
@@ -23,11 +24,13 @@ namespace TravelRecordApp
             BindingContext = viewModel;
         }
 
-        protected override void OnAppearing()
+        protected override async void OnAppearing()
         {
             base.OnAppearing();
 
             viewModel.UpdatePosts();
+
+            await AzureAppServiceHelper.SyncAsync();
         }
 
         private void MenuItem_Clicked(object sender, EventArgs e)
@@ -41,6 +44,7 @@ namespace TravelRecordApp
         private async void postListView_Refreshing(object sender, EventArgs e)
         {
             await viewModel.UpdatePosts();
+            await AzureAppServiceHelper.SyncAsync();
             postListView.IsRefreshing = false;
         }
     }

@@ -52,3 +52,5 @@ C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp\obj\
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp\obj\Debug\TravelRecordApp.csproj.CopyComplete
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp\obj\Debug\TravelRecordApp.dll
 C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp\obj\Debug\TravelRecordApp.pdb
+C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp\bin\Debug\Microsoft.Azure.Mobile.Client.SQLiteStore.dll
+C:\Users\lalor\source\repos\TravelRecordApp\TravelRecordApp\TravelRecordApp\bin\Debug\Microsoft.Azure.Mobile.Client.SQLiteStore.xml
